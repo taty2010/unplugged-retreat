@@ -1,0 +1,1249 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+html {
+    background-color: #202322;
+    height: auto;
+    width: 100%;
+	margin: 0;
+	
+}
+
+body {
+	color: #e2e3ed;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+   
+}
+
+header, footer {
+  width: 95%;
+	margin: 0 auto;
+}
+
+.signup, .mission, .faq-main{
+	background-color: #527158;
+}
+
+/* FONT */
+
+h1, h2, h3 {
+	font-family: 'Poppins', sans-serif;
+}
+
+h1{
+	font-size: 2.57em;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 2.142em;
+}
+
+h3{
+	font-size: 1.285em;
+}
+
+h4{
+	font-size: 1.285em;
+}
+
+a{
+	font-size: 1em;
+	color: #e2e3ed;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+p{
+	font-size: 1em;
+}
+
+
+/** Header **/
+
+
+.header-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+
+.nav-area{
+	width: 100%;
+	text-align: center;
+	height: 19vh;
+}
+
+.logo-header{
+	width:100%;
+	height: auto;
+	border-bottom: 2px #555555 solid;
+}
+
+.logo-header img{
+	width: 75%;
+	padding-bottom: 2vh;
+}
+
+ul{
+	width: 95%;
+	list-style: none;
+	padding-left: 5.5vw;
+}
+
+ul li {
+	display: inline-block;
+	padding-right: 10vw;
+}
+
+figure{
+	width: 100%;
+	height: 83.78vh;
+	margin: 0 auto;
+}
+
+.hero-img{
+	background-image: url(../img/jake-melara.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-img h1, 
+.text-join h3, 
+.text-join p,
+.signup-form h3,
+form{
+	margin-left: 3.6%;
+}
+
+.hero-img h1{
+	display: none;
+}
+
+.text-join p {
+	width: 89vw;
+	font-weight: 300;
+}
+
+.signup{
+	margin: 0;
+	width: 100%;
+}
+
+form{
+	width: 95%;
+}
+
+input{
+	width: 85vw;
+	margin-bottom: 2.5vh;
+	margin-left: 1vw;
+	font-size: 1em;
+	height: 12vw;
+}
+
+.submit{
+	background-color: #2a423a;
+	color: #fff;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;	
+}
+
+/*** Main Content ***/
+
+.main-wrapper{
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+
+#service-desc{
+	background-image: url(../img/rawpixel.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#service-desc h2, .services{
+	padding-left: 2.5vw;
+}
+
+#service-desc h2{
+	font-weight:400;
+	align-self: center;
+	padding-bottom: 3vh;
+}
+
+.services i{
+	font-size: 4.35em;
+	padding-bottom: 2vh;
+}
+
+.services p{
+	padding-bottom: 5.5vh;
+}
+
+.services{
+	text-align: center;
+	width: 55vw;
+	margin: 0 auto;
+}
+
+/*** TEAM SECTION ***/
+
+.third-section{
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	width: 95vw;
+	background-color: #2a423a;
+}
+
+.third-section h2{
+	font-weight: 400;
+	padding-top: 4vh;
+}
+
+.third-section h3{
+	width: 90vw;
+}
+
+.third-section p{
+	width: 90vw;
+	text-align:left;
+	padding-bottom: 3vh;
+}
+
+#team-img{
+	background-image: url(../img/omar-lopez.jpg);
+	width: 90vw;
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+}
+
+/*** CONTACT ***/
+
+footer{
+		display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	text-align: center;
+}
+
+.footer-wrapper{
+	padding: 10vh 0;
+}
+
+.contact {
+	padding-top: 2.5vh;
+}
+
+
+.contact ul li {
+	display: block;
+}
+
+.social img{
+	width: 10vw;
+	max-width:50px;
+	max-height: 50px;
+	height: 10vw;
+}
+
+/**** ABOUT***/
+
+.mission{
+	padding: 4.5vh 0;
+}
+
+.mission h2, .mission p{
+	width: 93vw;
+	padding-left: 1.5vw;
+}
+
+
+iframe {
+	height: 95vw;
+	width: 95vw;
+	margin: 0;
+	background-color: transparent;
+}
+
+.contactus-content{
+	padding-left: 3vw;
+	padding-bottom: 4.5vh;
+	
+}
+
+/**** FAQ ****/
+
+#faq{
+	padding-left: 2.5vw;
+	padding-bottom: 3.5vh;
+}
+
+#faq h2{
+	font-weight: 400;
+	
+}
+
+#faq p{
+	padding-bottom: 3vh;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media all and (max-width: 767) {
+	html{
+		font-size: calc(14px + (36 - 14) * ((100vw - 641px) / (1024 - 641)));
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	
+	html{
+		font-size: calc(14px + (48 - 14) * ((100vw - 641px) / (1024 - 641)));
+	}
+	
+	body{
+		font-size: 14px;
+		width: 100vw;
+	}
+	
+	h1{
+		font-weight: 600;
+		font-size: 3.428em;
+	}
+	
+	h2{
+		font-size: 2.571em;
+	}
+
+	h3{
+	font-size: 1.714em;
+	}
+
+	
+	header {
+		margin: 0;
+	}
+	
+	.header-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	width: 100vw;
+}
+	
+
+
+	.nav-area{
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	text-align: left;
+	margin-top: 2.5vh;
+	}
+
+	.logo-header{
+	width:50%;
+	margin: 0 auto;
+	border: none;
+	}
+
+	.logo-header img{
+	width: 60%;
+	padding-bottom: 2vh;
+	}
+
+	ul{
+	width: 50%;
+	display: inline;
+	}
+
+	ul li {
+	display: inline-block;
+	padding-right: 5.22vw;
+	}
+	
+	.hero-img{
+		background-size:cover;
+		background-position:center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+	.signup{
+	width: 100%;
+	display: inline-flex;
+	}
+	
+	.text-join{
+		width:45vw;
+		padding-right:5.5vw;
+		padding-left: 3vw;
+	}
+	
+	.text-join p{
+		width:45vw;
+	}
+	
+	.signup h3{
+		font-weight: 200;
+	}
+	
+	.signup-form h3{
+		padding-bottom: 3.5vh;
+	}
+	
+	form{
+	width: 45vw;	
+	}
+
+	input{
+	display: inline;
+	width: 40vw;
+	margin-bottom: 1.5vh;
+	margin-left: 1vw;
+	height: 5vw;
+	}
+
+.submit{
+	background-color: #2a423a;
+	color: #fff;
+	border: none;	
+	}
+	
+	.main-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	width: 100vw;
+	}
+	
+	#service-desc{
+		width: 100%;
+	}
+	
+	#service-desc h2{
+		text-align: center;
+	}
+	
+	.services{
+		width: 27vw;
+		display: inline-block;
+		margin-left: 13vw;
+	}
+	
+	.services i {
+		font-size: 3.5em;
+		margin: 0 auto;
+	}
+	
+	
+	#rooms i{
+		padding: 0;
+	
+	}
+	
+	.third-section{
+		width: 100vw;
+		height: 55vh;
+	}
+	
+	.group{
+		display: inline-flex;
+	}
+	
+	.group-text{
+		width: 50vw;
+		padding-left: 3vw;
+	}
+	
+	.third-section h2{
+	width: 95vw;
+	font-weight: 400;
+	padding-top: 4vh;
+	}
+
+	.third-section h3{
+	width: 45vw;
+	font-weight: 200;
+		margin: 0;
+	}
+
+	.third-section p{
+	width: 45vw;
+	text-align:left;
+	padding-bottom: 3vh;
+	}
+
+	#team-img{
+	width: 48vw;
+	height: 28vh;
+	background-size: cover;
+	background-position: center;
+	margin-left: 5vw;
+	}
+	
+	footer{
+		width: 100vw;
+	}
+	
+	footer h3{
+		font-weight: 300;
+		margin: 0;
+	}
+	
+	.footer-wrapper{
+		display: inline-flex;
+	}
+	
+	.contact{
+		width: 45vw;
+		text-align: center;
+	}
+	
+	.social{
+		padding-top: 3vh;
+		width: 50vw;
+	}
+	
+	.social h3{
+		padding-bottom: 5vh;
+	}
+	
+	.contact ul li{
+		padding-left: 5vw; 
+	}
+	
+	
+	/**** ABOUT ****/
+	
+	.mission{
+		width: 100vw;
+		padding-bottom: 10vh;
+	}
+	
+	.mission h2{
+		font-weight: 300;
+		width: 80vw;
+		padding-left: 3.5vw;
+	}
+	
+	.about{
+		display: inline-flex;
+		padding-left: 2.5vw;
+	}
+	
+	.about p{
+		width: 40vw;
+		padding-right: 8vw;
+	}
+	
+	iframe {
+	height: 60vw;
+	width: 100vw;
+}
+	
+	#contact-about h2{
+		width: 70vw;
+		margin-left: 0;
+	}
+	.contactus-content{
+		display: inline-flex;
+	}
+	
+	.contactus-content ul li{
+		text-align: left;
+		padding-left: 6vw;
+
+	}
+	
+	/**** FAQ ****/
+	
+	.faq-main{
+		width: 100vw;
+	}
+
+	#faq{
+	padding: 3.5vh 2.5vw;
+	}
+	
+	.questionnaire1, .questionnaire2{
+		display: inline-flex;
+	}
+
+	#faq h2{
+	font-weight: 400;
+	}
+	
+	#faq h4{
+		width: 45vw;
+	}
+
+	#faq p{
+	padding-bottom: 3vh;
+	width: 45vw;
+	padding-right: 3vw;
+	}
+
+}
+
+@media all and (min-width: 1025px) {
+	
+	html{
+		font-size: calc(18px + (60 - 18) * ((100vw - 1025px) / (1600 - 1025)));
+	}
+	
+	body{
+		font-size: 18px;
+	}
+	
+	h1{
+		font-weight: 600;
+		font-size: 3.333em;
+	}
+	
+	h2{
+		font-size: 2em;
+	}
+
+	h3{
+	font-size: 1.667em;
+	}
+	
+	p{
+		font-size: 1em;
+	}
+	
+	header {
+		margin: 0;
+	}
+	
+	.header-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	width: 100vw;
+	}
+	
+	.nav-area{
+	width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	text-align: left;
+	margin-top: 2.5vh;
+	}
+
+	.logo-header{
+	width:50%;
+	margin: 0 auto;
+	border: none;
+	}
+
+	.logo-header img{
+	width: 30%;
+	padding-bottom: 2vh;
+	}
+
+	ul{
+	width: 50%;
+	display: inline;
+	}
+
+	ul li {
+	display: inline-block;
+	padding-right: 5.22vw;
+	}
+	
+	.hero-img{
+		width: 100%;
+		height: 90vh
+	}
+	
+	.hero-img h1{
+		width: 50vw;
+		padding-left: 15vw;
+	}
+	
+	.signup{
+	width: 100%;
+	display: inline-flex;
+	}
+	
+	.text-join{
+		width:45vw;
+		padding-left: 12vw;
+	}
+	
+	.text-join p{
+		width:20vw;
+	}
+	
+	.text-join h3{
+		width:25vw;
+	}
+	
+	.signup h3{
+		font-weight: 200;
+	}
+	
+	
+	form{
+	width: 45vw;
+	margin-right: 5vw;
+	}
+
+	input{
+	display: inline;
+	width: 25vw;
+	margin-bottom: 1.5vh;
+	margin-left: 1vw;
+	height: 3vw;
+	}
+
+.submit{
+	background-color: #2a423a;
+	color: #fff;
+	border: none;	
+	}
+	
+	.main-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+	width: 100vw;
+	}
+	
+	#service-desc{
+		width: 100%;
+	}
+	
+	#service-desc h2{
+		text-align: center;
+	}
+	
+	.services{
+		width: 30vw;
+		display: inline-block;
+	}
+	
+	.services i {
+		font-size: 3.5em;
+		margin: 0 auto;
+	}
+	
+	.services p{
+		width: 15vw;
+		margin: 0 auto;
+	}
+	
+	#rooms i{
+		padding: 0;
+	
+	}
+	
+	.third-section{
+		width: 100vw;
+		height: 70vh;
+	}
+	
+	.group{
+		display: inline-flex;
+	}
+	
+	.group-text{
+		width: 50vw;
+		padding-left: 3vw;
+	}
+	
+	.third-section h2{
+	width: 95vw;
+	font-weight: 400;
+	padding-top: 4vh;
+	}
+
+	.third-section h3{
+	width: 45vw;
+	font-weight: 200;
+	margin-left: 2vw;
+	}
+
+	.third-section p{
+	width: 45vw;
+	text-align:left;
+	padding-bottom: 3vh;
+	}
+
+	#team-img{
+	width: 35vw;
+	height: 38vh;
+	background-size: cover;
+	background-position: center;
+	margin-left: 5vw;
+	}
+	
+	footer{
+		width: 100vw;
+	}
+	
+	footer h3{
+		font-weight: 300;
+		margin: 0;
+	}
+	
+	.footer-wrapper{
+		display: inline-flex;
+	}
+	
+	.contact{
+		width: 45vw;
+		text-align: center;
+	}
+	
+	.social{
+		padding-top: 3vh;
+		width: 50vw;
+	}
+	
+	.social h3{
+		padding-bottom: 5vh;
+	}
+	
+	
+	.contact ul li{
+		padding-left: 5vw;
+	}
+	
+	/*** ABOUT ***/
+	
+	.mission{
+		width: 100vw;
+		padding-bottom: 10vh;
+		
+	}
+	
+	.text-ourmission h2{
+		padding-left: 16vw;
+		width: 60vw;
+		font-size: 2.667em;
+		
+	}
+	
+		#contact-about h2{
+		width: 70vw;
+		margin-left: 0;
+	}
+	.contactus-content{
+		display: inline-flex;
+	}
+	
+	.contactus-content ul li{
+		text-align: left;
+		padding-left: 15vw;
+
+	}
+	
+	.about{
+		display: inline-flex;
+		padding-left: 15vw;
+	}
+	
+	.about p{
+		width: 28vw;
+		padding-right: 2.5vw;
+	}
+	
+	iframe {
+	height: 40vw;
+	width: 100vw;
+	margin: 0;
+	background-color: transparent;
+}
+	
+		/**** FAQ ****/
+	
+	.faq-main{
+		width: 100vw;
+	}
+
+	#faq{
+	padding: 3.5vh 2.5vw;
+	}
+	
+	.questionnaire1, .questionnaire2{
+		display: inline-flex;
+		padding-left: 3.5vw;
+	}
+
+	#faq h2{
+	font-weight: 400;
+	}
+	
+	#faq h4{
+		width: 45vw;
+	}
+
+	#faq p{
+	padding-bottom: 3vh;
+	width: 30vw;
+	padding-right: 3vw;
+	}
+
+}
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
